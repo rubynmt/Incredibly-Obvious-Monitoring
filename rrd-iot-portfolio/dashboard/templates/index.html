@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block page_css %}
+{% endblock %}
+
+{% block content %}
+<h1>EnviroMon Dashboard</h1>
+
+<div class="card-deck pb-4 mt-1">
+    <div class="card">
+        <h2 class="card-header">Chart 1</h2>
+        <div class="card-body">
+            <canvas id="CPU-Chart"></canvas>
+        </div>
+    </div>
+    <div class="card">
+        <h2 class="card-header">Chart 2</h2>
+        <div class="card-body">
+            <canvas id="CCC-Chart"></canvas>
+        </div>
+    </div>
+</div>
+<div class="card-deck pb-4">
+    <div class="card">
+        <h2 class="card-header">Chart 3</h2>
+        <div class="card-body">
+            <canvas id="BBB-Chart"></canvas>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 class="card-header">Chart 4</h2>
+        <div class="card-body">
+            <canvas id="AAA-Chart"></canvas>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block page_scripts %}
+{% endblock %}

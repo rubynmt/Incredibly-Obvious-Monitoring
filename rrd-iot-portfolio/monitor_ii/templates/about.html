@@ -1,0 +1,162 @@
+{% extends 'base.html' %}
+
+{% block title %}
+About
+{% endblock %}
+
+{% block page_css %}
+<link rel="stylesheet" href="static/vendor/highlight/css/vs2015.css">
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12 ">
+        <h1>Welcome to <span class="text-success">EnviroMon</span></h1>
+        <p>
+            EnviroMon is a three part system consisting of monitoring, data
+            provision and dashboard.
+        </p>
+    </div>
+
+    <div class="col-12 ">
+        <div class="card bg-dark text-light">
+            <h2 class="card-header">
+                Development Team
+            </h2>
+            <div class="card-body bg-white text-dark">
+                <dl>
+                    <dt>Adrian Gould</dt>
+                    <dd>Senior Developer / Lecturer</dd>
+                    <dt>Sander Huijsen</dt>
+                    <dd>Senior Developer / Lecturer</dd>
+                    <dt>STUDENT NAME HERE</dt>
+                    <dd>Junior Developer</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 pt-3">
+        <div class="card bg-warning text-dark mb-3">
+            <h3 class="card-header">Components</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="card-body bg-white text-dark">
+                        <h4 class="card-title">
+                            Monitor Component
+                        </h4>
+                        <dl class="row">
+                            <dt class="col-4">Location:</dt>
+                            <dd class="col-8">
+                                <code>monitor</code>
+                            </dd>
+
+                            <dt class="col-4">Executable code:</dt>
+                            <dd class="col-8">
+                                <code>monitor.py</code>
+                            </dd>
+
+                            <dt class="col-4">Description:</dt>
+                            <dd class="col-8">
+                                Monitor is the code that runs and monitors the
+                                various sensors connected to the Raspberry Pi.
+                                It updates every 5 seconds, storing data in an
+                                SQLite database.
+                            </dd>
+
+                            <dt class="col-4">Running:</dt>
+                            <dd class="col-8">
+                                <pre><code>python monitor.py</code></pre>
+                            </dd>
+
+                        </dl>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="card-body bg-white text-dark">
+                        <h4 class="card-title">Data Provider</h4>
+                        <dl class="row">
+                            <dt class="col-4">Location:</dt>
+                            <dd class="col-8">
+                                <code>monitor</code>
+                            </dd>
+
+                            <dt class="col-4">Executable code:</dt>
+                            <dd class="col-8">
+                                <code>app.py</code>
+                            </dd>
+
+                            <dt class="col-4">Description:</dt>
+                            <dd class="col-8">
+                                App is a simplified miniature Flask based API
+                                application that allows the monitored data to be
+                                queried by remote dashboard applications.
+                            </dd>
+
+                            <dt class="col-4">Running (Debug):</dt>
+                            <dd class="col-8">
+                                <pre class=""><code>export FLASK_APP=app
+export FLASK_ENV=development
+flask run</code></pre>
+                            </dd>
+
+                            <dt class="col-4">Running (Test Production):</dt>
+                            <dd class="col-8">
+                                <pre><code>export FLASK_APP=app
+export FLASK_ENV=production
+flask run</code></pre>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="card-body bg-white text-dark">
+                        <h4 class="card-title">Dashboard Component</h4>
+                        <dl class="row">
+                            <dt class="col-4">Location:</dt>
+                            <dd class="col-8">
+                                <code>dashboard</code>
+                            </dd>
+
+                            <dt class="col-4">Executable code:</dt>
+                            <dd class="col-8">
+                                <code>app.py</code>
+                            </dd>
+
+                            <dt class="col-4">Description:</dt>
+                            <dd class="col-8">
+                                Dashboard presents the user with a menu
+                                containing
+                                options for each sensor and a front page with a
+                                summary
+                                of current data. Each page has dynamic display
+                                of the data in a chart.
+                            </dd>
+
+                            <dt class="col-4">Running (Debug):</dt>
+                            <dd class="col-8">
+                                <pre class=""><code>export FLASK_APP=app
+export FLASK_ENV=development
+flask run</code></pre>
+                            </dd>
+
+                            <dt class="col-4">Running (Test Production):</dt>
+                            <dd class="col-8">
+                                <pre class=""><code>export FLASK_APP=app
+export FLASK_ENV=production
+flask run</code></pre>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block page_scripts %}
+<script src="/static/vendor/highlight/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{% endblock %}

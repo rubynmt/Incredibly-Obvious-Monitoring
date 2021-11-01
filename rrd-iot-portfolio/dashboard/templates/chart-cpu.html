@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block page_css %}
+<link href="/static/vendor/chartjs/css/Chart.css" type="text/css">
+{% endblock %}
+
+{% block content %}
+<h1>Monitoring Device Detail</h1>
+
+<div class="card-deck pb-4 mt-1">
+    <div class="card">
+        <h2 class="card-header">Processor</h2>
+        <div class="card-body">
+            <canvas id="CPU-Chart"></canvas>
+        </div>
+    </div>
+    <div class="card">
+        <h2 class="card-header">Storage</h2>
+        <div class="card-body">
+            <canvas id="Storage-Chart"></canvas>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block page_scripts %}
+<script src="/static/vendor/chartjs/js/Chart.bundle.js"></script>
+
+{% endblock %}

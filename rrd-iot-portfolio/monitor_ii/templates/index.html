@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block page_css %}
+{% endblock %}
+
+{% block content %}
+<h1>EnviroMon Data Provider</h1>
+
+<div class="card-columns">
+    {% for status in statuses %}
+    <div class="card {{ status['class'] }} text-light">
+        <h2 class="card-header">
+            {{ status['name'] }}
+            <span class="pl-1 ml-1 float-right">
+                <i class="fa {{ status['icon'] }}"></i>
+            </span>
+        </h2>
+        <div class="card-body text-center">
+            <p><i class="{{ status['emoticon'] }} fa-5x"></i></p>
+            <h3 class="card-text">{{ status['message'] }}</h3>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block page_scripts %}
+{% endblock %}

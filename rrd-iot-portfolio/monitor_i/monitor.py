@@ -1,4 +1,5 @@
 import random
+from tabulate import tabulate
 from datetime import datetime
 from time import sleep
 
@@ -30,3 +31,8 @@ def get_maximum_cpu_load():
     else:
         return get_random_cpu_load()
 
+def displayCPUTable(data):
+    #This function will take CPU date and display in a table for console
+    header=['DATE', 'TIME', 'CPU LOAD']
+    table = tabulate(data, headers=header, tablefmt="pretty")
+    return table

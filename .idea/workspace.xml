@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8468611-da81-4c09-a781-51560fd05467" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/dashboard/static/vendor/chartjs/js/Chart.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/dashboard/static/vendor/chartjs/js/Chart.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/dashboard/static/vendor/chartjs/js/Chart.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/dashboard/static/vendor/chartjs/js/Chart.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/dashboard/static/vendor/chartjs/js/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/dashboard/static/vendor/chartjs/js/Chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/dashboard/static/vendor/chartjs/js/Chart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/dashboard/static/vendor/chartjs/js/Chart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/cpu_loads.db" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/cpu_loads.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/monitor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/static/vendor/chartjs/js/Chart.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/static/vendor/chartjs/js/Chart.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/static/vendor/chartjs/js/Chart.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/static/vendor/chartjs/js/Chart.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/static/vendor/chartjs/js/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/static/vendor/chartjs/js/Chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/static/vendor/chartjs/js/Chart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/static/vendor/chartjs/js/Chart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_i/monitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_i/monitor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +17,17 @@
       <list>
         <option value="Python Script" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -39,6 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -91,9 +96,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="sysmon-table" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Incredibly-Obvious-Monitoring" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rrd-iot-portfolio/monitor_i" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rrd-iot-portfolio/monitor_i/sysmon-table.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.sysmon-table" />
         <item itemvalue="Python.monitor" />
       </list>
     </recent_temporary>
@@ -108,7 +136,8 @@
       <updated>1636684340987</updated>
       <workItem from="1636684342877" duration="1179000" />
       <workItem from="1636685560776" duration="231000" />
-      <workItem from="1636685805992" duration="1052000" />
+      <workItem from="1636685805992" duration="2587000" />
+      <workItem from="1636688808825" duration="3033000" />
     </task>
     <servers />
   </component>
@@ -129,6 +158,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Incredibly_Obvious_Monitoring$monitor.coverage" NAME="monitor Coverage Results" MODIFIED="1636686807570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii" />
-    <SUITE FILE_PATH="coverage/Incredibly_Obvious_Monitoring$main.coverage" NAME="main Coverage Results" MODIFIED="1636686832875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rrd-iot-portfolio" />
+    <SUITE FILE_PATH="coverage/Incredibly_Obvious_Monitoring$main.coverage" NAME="main Coverage Results" MODIFIED="1636691758430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rrd-iot-portfolio" />
+    <SUITE FILE_PATH="coverage/Incredibly_Obvious_Monitoring$sysmon_table.coverage" NAME="sysmon-table Coverage Results" MODIFIED="1636689498132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rrd-iot-portfolio/monitor_i" />
   </component>
 </project>

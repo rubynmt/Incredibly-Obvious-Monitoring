@@ -30,7 +30,3 @@ def get_maximum_cpu_load():
     else:
         return get_random_cpu_load()
 
-while True:
-    load = get_maximum_cpu_load()
-    print(datetime.now(), ' CPU load =', load)
-    sleep(3)

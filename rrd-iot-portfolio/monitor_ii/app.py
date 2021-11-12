@@ -26,11 +26,11 @@ def set_status(status):
 
 @app.route('/')
 def index():
-    # check to see if cpu-monitor is running
+    # check to see if cpu-monitor_i is running
     monitor_cpu = True
-    # check to see if storage monitor is running
+    # check to see if storage monitor_i is running
     monitor_storage = False
-    # check to see if environmental monitor is running
+    # check to see if environmental monitor_i is running
     monitor_enviro = None
 
     # set up component dictionaries and set values

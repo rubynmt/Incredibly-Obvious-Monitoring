@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e8468611-da81-4c09-a781-51560fd05467" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/cpu_loads.db" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/cpu_loads.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_i/monitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_i/monitor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/db.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +136,7 @@
       <workItem from="1636685560776" duration="231000" />
       <workItem from="1636685805992" duration="2587000" />
       <workItem from="1636688808825" duration="3033000" />
+      <workItem from="1637304779969" duration="397000" />
     </task>
     <servers />
   </component>

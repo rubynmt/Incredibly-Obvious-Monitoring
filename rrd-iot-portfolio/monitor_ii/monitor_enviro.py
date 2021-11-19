@@ -12,3 +12,5 @@ from db import EnvironmentTPH, Base
 from mypi import \
     get_serial, get_mac, get_host_name, \
     get_cpu_temp, get_gpu_temp, get_maximum_cpu_load
+
+db_filename = './data/monitor_data.db'

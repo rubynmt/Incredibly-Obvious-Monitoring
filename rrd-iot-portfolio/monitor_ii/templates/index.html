@@ -25,6 +25,7 @@ Home
         </div>
     </div>
     {% endfor %}
+</div>
 
 <div class="card-deck pb-4 mt-1">
     <div class="card">
@@ -55,10 +56,12 @@ Home
         </div>
     </div>
 </div>
-</div>
 {% endblock %}
 
-
-
 {% block page_scripts %}
+    <script src="/static/vendor/chartjs/js/Chart.bundle.js"></script>
+    <script src="/static/js/device-load-pie.js"></script>
+    <script src="/static/js/humidity-bar.js"></script>
+    <script src="/static/js/pressure-bar.js"></script>
+    <script src="/static/js/temperature-bar.js"></script>
 {% endblock %}

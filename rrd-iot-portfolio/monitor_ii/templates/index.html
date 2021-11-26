@@ -25,8 +25,40 @@ Home
         </div>
     </div>
     {% endfor %}
+
+<div class="card-deck pb-4 mt-1">
+    <div class="card">
+        <h2 class="card-header">Device Load</h2>
+        <div class="card-body">
+            <canvas id="device-load-pie"></canvas>
+        </div>
+    </div>
+    <div class="card">
+        <h2 class="card-header">Humidity</h2>
+        <div class="card-body">
+            <canvas id="humidity-bar"></canvas>
+        </div>
+    </div>
+</div>
+<div class="card-deck pb-4">
+    <div class="card">
+        <h2 class="card-header">Pressure</h2>
+        <div class="card-body">
+            <canvas id="pressure-bar"></canvas>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 class="card-header">Temperature</h2>
+        <div class="card-body">
+            <canvas id="temperature-bar"></canvas>
+        </div>
+    </div>
+</div>
 </div>
 {% endblock %}
+
+
 
 {% block page_scripts %}
 {% endblock %}

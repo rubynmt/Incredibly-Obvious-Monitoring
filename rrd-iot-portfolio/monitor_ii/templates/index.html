@@ -26,7 +26,49 @@ Home
     </div>
     {% endfor %}
 </div>
+
+<div class="card-deck pb-4 mt-1">
+    <div class="card">
+        <h2 class="card-header">Device Load</h2>
+        <div class="card-body">
+            <canvas id="device-load-pie"></canvas>
+        </div>
+    </div>
+    <div class="card">
+        <h2 class="card-header">Humidity</h2>
+        <div class="card-body">
+            <canvas id="humidity-bar"></canvas>
+        </div>
+    </div>
+</div>
+<div class="card-deck pb-4">
+    <div class="card">
+        <h2 class="card-header">Pressure</h2>
+        <div class="card-body">
+            <canvas id="pressure-bar"></canvas>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 class="card-header">Temperature</h2>
+        <div class="card-body">
+            <canvas id="temperature-bar"></canvas>
+        </div>
+    </div>
+        <div class="card">
+        <h2 class="card-header">Historical</h2>
+        <div class="card-body">
+            <canvas id="history-line-chart"></canvas>
+        </div>
+    </div>
+</div>
 {% endblock %}
 
 {% block page_scripts %}
+    <script src="/static/vendor/chartjs/js/Chart.bundle.js"></script>
+    <script src="/static/js/device-load-pie.js"></script>
+    <script src="/static/js/humidity-bar.js"></script>
+    <script src="/static/js/pressure-bar.js"></script>
+    <script src="/static/js/temperature-bar.js"></script>
+    <script src="/static/js/line-chart.js"></script>
 {% endblock %}

@@ -20,9 +20,9 @@ class EnvironmentTPH:
         self.device_name = "UNKNOWN"
         self.device_mac = "ZZ:ZZ:ZZ:ZZ:ZZ:ZZ"
         self.device_serial = "UNKNOWN"
-        self.temperature = 0
-        self.pressure = 0
-        self.humidity = 0
+        self.temperature = 30
+        self.pressure = 26
+        self.humidity = 54
         self.created_at = datetime.now()
 
 

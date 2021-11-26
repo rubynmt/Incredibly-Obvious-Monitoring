@@ -1,9 +1,14 @@
 from flask import Flask, render_template, jsonify
-from db import CPU, Storage, Base
+from db import CPU, Storage, Base, EnvironmentTPH
 from flask_cors import CORS
 
 from sqlalchemy import create_engine, select
 from sqlalchemy.orm import sessionmaker
+
+import random
+import logging
+
+
 
 db_filename = './data/monitor_data.db'
 app = Flask(__name__)
@@ -79,29 +84,52 @@ def cpu_load(qty=1):
 
 @app.route('/api/environment')
 def get_api_environment():
-    return {"error": "Route note implemented",
-            "temperature": None,
-            "pressure": None,
-            "humidity": None}
+    current_enviro = get_api_temperature(), get_api_pressure(), get_api_humidity()
+    return {"Environment: ": current_enviro}
+
+#    return {"error": "Route note implemented",
+#           "temperature": None,
+#           "pressure": None,
+#           "humidity": None}
 
 @app.route('/api/temperature')
 def get_api_temperature():
-    return {"error": "Route note implemented",
-            "temperature": None}
+    current_temp = EnvironmentTPH().temperature
+    return {"Temperature: ": current_temp}
+#    return {"error": "Route note implemented",
+#            "temperature": None}
+
 
 @app.route('/api/humidity')
 def get_api_humidity():
-    return {"error": "Route note implemented",
-            "humidity": None}
+    current_humidity = EnvironmentTPH().humidity
+    return {"Humidity: ":current_humidity}
+#    return {"error": "Route note implemented",
+#            "humidity": None}
 
 @app.route('/api/pressure')
 def get_api_pressure():
-    return {"error": "Route note implemented",
-            "pressure": None}
+    current_pressure = EnvironmentTPH().pressure
+    return {"Pressure: ": current_pressure}
+#    return {"error": "Route note implemented",
+#           "pressure": None}
 
 @app.route('/api/cpu-load')
 def cpu_load_latest():
     return cpu_load(1)
+
+@app.route('/api/history')
+def temp_history():
+    @app.route('api/ticker')
+    def somethin():
+        x = 0
+        for num in range(1):
+            r = random.randint(0, 50)
+            x=r
+
+        return {"History: ": x}
+    return render_template("Historical_page.html")
+
 
 
 if __name__ == '__main__':

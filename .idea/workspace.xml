@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e8468611-da81-4c09-a781-51560fd05467" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii/templates/monitor.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Semester 2/IoT/POR Task 6/J167191-IoT6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -169,7 +171,9 @@
       <workItem from="1637892312269" duration="437000" />
       <workItem from="1637894100423" duration="1903000" />
       <workItem from="1637896231614" duration="38000" />
-      <workItem from="1637896358728" duration="4851000" />
+      <workItem from="1637896358728" duration="6167000" />
+      <workItem from="1637903006845" duration="187000" />
+      <workItem from="1637937119243" duration="3487000" />
     </task>
     <servers />
   </component>
@@ -189,7 +193,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Incredibly_Obvious_Monitoring$app.coverage" NAME="app Coverage Results" MODIFIED="1637901206893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii" />
+    <SUITE FILE_PATH="coverage/Incredibly_Obvious_Monitoring$app.coverage" NAME="app Coverage Results" MODIFIED="1637940581527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii" />
     <SUITE FILE_PATH="coverage/Incredibly_Obvious_Monitoring$app__1_.coverage" NAME="app (1) Coverage Results" MODIFIED="1637815035939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii" />
     <SUITE FILE_PATH="coverage/Incredibly_Obvious_Monitoring$monitor__1_.coverage" NAME="monitor (1) Coverage Results" MODIFIED="1637741534029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rrd-iot-portfolio/monitor_i" />
     <SUITE FILE_PATH="coverage/Incredibly_Obvious_Monitoring$monitor.coverage" NAME="monitor Coverage Results" MODIFIED="1636686807570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rrd-iot-portfolio/monitor_ii" />

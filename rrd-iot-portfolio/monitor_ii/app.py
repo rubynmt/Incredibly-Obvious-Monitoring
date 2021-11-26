@@ -118,19 +118,6 @@ def get_api_pressure():
 def cpu_load_latest():
     return cpu_load(1)
 
-@app.route('/api/history')
-def temp_history():
-    @app.route('api/ticker')
-    def somethin():
-        x = 0
-        for num in range(1):
-            r = random.randint(0, 50)
-            x=r
-
-        return {"History: ": x}
-    return render_template("Historical_page.html")
-
-
 
 if __name__ == '__main__':
     app.run()
